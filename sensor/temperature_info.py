@@ -3,7 +3,6 @@ from datetime import date, datetime
 
 class TemperatureData(HouseInfo):
     def _convert_data(self, data):
-        self.data = data
         recs = []
         for rec in data:
             recs.append(int(rec, base=10))
